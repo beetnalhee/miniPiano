@@ -1,0 +1,60 @@
+#piano {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  width: max-content;
+  margin: 40px auto;
+}
+
+.header {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.white-keys {
+  display: flex;
+}
+.key.white {
+  width: 60px;
+  height: 200px;
+  background: white;
+  border: 1px solid #333;
+  border-radius: 0 0 6px 6px;
+  font-size: 1.2em;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  box-shadow: 2px 2px 6px #aaa;
+  padding-top: 140px;
+}
+.key.white:active {
+  background: #e0e0e0;
+}
+.black-keys {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  height: 120px;
+  width: 1200px;
+  pointer-events: none;
+}
+.key.black {
+  width: 40px;
+  height: 110px;
+  background: #222;
+  border: 1px solid #111;
+  border-radius: 0 0 4px 4px;
+  margin-left: 40px;
+  margin-right: -20px;
+  z-index: 2;
+  position: relative;
+  pointer-events: auto;
+}
+.key.black:active {
+  background: #444;
+}
+.black-keys .spacer {
+  width: 60px;
+  pointer-events: none;
+}
