@@ -1,0 +1,66 @@
+<!-- 이 파일을 실행하려면:
+1. 이 폴더(c:\study_project\grow)에 piano.html, piano.css, piano.js, 그리고 sounds 폴더(각 음에 해당하는 mp3 파일 포함)가 있어야 합니다.
+2. piano.html 파일을 더블클릭하거나, 웹 브라우저(Chrome, Edge 등)에서 열면 됩니다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>miniPiano</title>
+    <link rel="stylesheet" href="piano.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">🥁🎵🎸🎷🎶 희주의 피아노 🎹🎼🪇🪕🎻</h1>
+      <p>건반을 클릭해서 멋진 피아노연주를 해보세요!</p>
+    </div>
+    <div id="piano">
+      <div class="white-keys">
+        <button class="key white" data-note="c3">도</button>
+        <button class="key white" data-note="d3">레</button>
+        <button class="key white" data-note="e3">미</button>
+        <button class="key white" data-note="f3">파</button>
+        <button class="key white" data-note="g3">솔</button>
+        <button class="key white" data-note="a4">라</button>
+        <button class="key white" data-note="b3">시</button>
+        <button class="key white" data-note="c4">도</button>
+        <button class="key white" data-note="d4">레</button>
+        <button class="key white" data-note="e4">미</button>
+        <button class="key white" data-note="f4">파</button>
+        <button class="key white" data-note="g4">솔</button>
+        <button class="key white" data-note="a5">라</button>
+        <button class="key white" data-note="b5">시</button>
+        <button class="key white" data-note="c5">도</button>
+        <button class="key white" data-note="d5">레</button>
+        <button class="key white" data-note="e5">미</button>
+        <!-- <button class="key white" data-note="f5">파</button>
+        <button class="key white" data-note="g5">솔</button>
+        <button class="key white" data-note="a5">라</button>
+        <button class="key white" data-note="b5">시</button> -->
+      </div>
+      <div class="black-keys">
+        <button class="key black" data-note="c-3"></button>
+        <button class="key black" data-note="d-3"></button>
+        <div class="spacer"></div>
+        <button class="key black" data-note="f-3"></button>
+        <button class="key black" data-note="g-3"></button>
+        <button class="key black" data-note="a-4"></button>
+        <div class="spacer"></div>
+        <button class="key black" data-note="c-4"></button>
+        <button class="key black" data-note="d-4"></button>
+        <div class="spacer"></div>
+        <button class="key black" data-note="f-4"></button>
+        <button class="key black" data-note="g-4"></button>
+        <button class="key black" data-note="a-5"></button>
+        <div class="spacer"></div>
+        <button class="key black" data-note="c-5"></button>
+        <button class="key black" data-note="d-5"></button>
+        <div class="spacer"></div>
+        <!-- <button class="key black" data-note="f-5"></button>
+        <button class="key black" data-note="g-5"></button>
+        <button class="key black" data-note="a-5"></button> -->
+      </div>
+    </div>
+    <script src="piano.js"></script>
+  </body>
+</html>
